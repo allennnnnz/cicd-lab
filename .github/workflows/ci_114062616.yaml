@@ -1,0 +1,28 @@
+name: CI - 114062616
+
+on: push
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v5
+
+      - name: Install dependencies
+        run: npm ci
+        
+
+      - name: TypeScript typecheck
+        run: npm run typecheck
+
+      - name: Prettier check 
+        run: npm run format:check
+
+      - name: run test
+        run: npm run test
+      
+      # 繼續補...

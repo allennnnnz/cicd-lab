@@ -1,0 +1,12 @@
+[workspace]
+authors = ["allennnnnz <allenzhuang0117@gmail.com>"]
+channels = ["conda-forge"]
+name = "cicd-lab"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+act = ">=0.2.88,<0.3"
+nodejs = ">=26.2.0,<26.3"

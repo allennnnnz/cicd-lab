@@ -2,4 +2,6 @@ node_modules/
 dist/
 npm-debug.log*
 .DS_Store
-reports/
+reports/# pixi environments
+.pixi/*
+!.pixi/config.toml
